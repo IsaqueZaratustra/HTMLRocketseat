@@ -1,0 +1,79 @@
+<!--
+<table>
+    Prós
+        -Visualização de dados via linhas ou colunas
+        -Boa acessibilidade para leitura de dados
+    Contras
+        -Pouco flexível
+        -Precisa de estilização para melhor visualização
+    Não Usar
+        -Para criar seu layout
+-->
+<caption><h1>Quantidade pessoas</h1></caption>
+<table>
+<thead><tr>
+    <th><h2>Nome</h2></th>
+    <th><h2>Idade</h2></th>
+</tr></thead>
+<tbody>    
+    <tr>
+        <td>Isaque</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>Ronaldo</td>
+        <td>61</td>
+    </tr></tbody>
+<tfoot>
+    <tr>
+        <td>Total</td>
+        <td>2</td>
+    </tr>    
+</tfoot>
+</table><br>
+<br>
+<br>
+<br>
+<br>
+<!--
+    2 Lojas 
+        Quantos produtos foram produzidos,quantos vendidos e agrupados por nome dos produtos
+-->
+<table>
+    <caption>Produzidos x Vendidos por loja</caption>
+
+    <colgroup>
+    <col style="background-color: yellow;">
+    <col span="2" style="background-color: red;">
+    <col span="2" style="background-color: blue;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup" >Isaque Pereira</th>
+            <th colspan="2" scope="colgroup" >Ronaldo Marques</th>
+        </tr>
+        <tr>
+            <th scope="col" >Produzidos</th>
+            <th scope="col" >Vendidos</th>
+            <th scope="col" >Vendidos</th>
+            <th scope="col" >Produzidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" >Vassouras</th>
+            <td>50</td>
+            <td>20</td>
+            <td>30</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row" >Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
